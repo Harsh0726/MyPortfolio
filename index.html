@@ -2,249 +2,331 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/logo-color.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 
-    <!-- Froala Design Blocks - Call to Action -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
 
-    <title>Portfolio with Flola Blocks</title>
+  <!-- Froala Design Blocks - Call to Action -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Portfolio with Flola Blocks</title>
 </head>
 
 <body>
-    <!-- HEADER AND CONTENT SECTIONS -->
+  <!-- HEADER AND CONTENT SECTIONS -->
+  <div class="hero rounded pt-5">
     <!-- header -->
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="https://www.froala.com">
-                    <img src="./images/logo-no-background.png" height="50" alt="image">
-                </a>
+      <div class="container position-relative">
+        <nav class="navbar py-3 rounded navbar-expand-md">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logo-no-background.png" alt="image">
+          </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3"
-                    aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <!-- this display in small device -->
+          <button class="navbar-togglar" type="button">
+            <i class="far fa-bars"></i>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav3">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://www.froala.com">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.froala.com">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.froala.com">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.froala.com">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.froala.com">About</a>
-                        </li>
-                    </ul>
-
-                    <a class="btn btn-outline-primary ml-md-3" href="https://www.froala.com">Button</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+          <div class="collapse navbar-collapse" id="navbarNav3">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#what-i-do">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     <!-- content -->
-    <section class="fdb-block">
-        <div class="col-fill-right" style="background-image: url(images/mybrc.png);">
-        </div>
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-md-5 text-center">
-                    <h1>Froala Blocks</h1>
-                    <p class="lead">I want to enhance digital experiences - speed, ease, beauty, accessibility. I love studying new tech, a relentless hardworker. Let's innovate together!</p>
-                    <p class="mt-4 mb-5"><a class="btn btn-secondary" href="https://www.froala.com">Hire Me</a></p>
-
-                    <p>Code. Create. Conquer.</p>
-                </div>
-            </div>
+    <section class="container hero-small">
+        <div class="row align-items-center">
+          <div class="col-12 py-5 py-xl-0 col-xl-5 text-left">
+            <h1>I'm Harshani<br><span id="typed">UI/UX Designer</span></h1>
+            <br>
+            <p>I want to enhance digital experiences - speed, ease, beauty, accessibility. I love studying
+              new tech, a relentless hardworker. Let's innovate together!</p>        
+              <button type="button" class="rounded mt-4">
+                <a href="#">Hire Me</a>
+              </button>
+              <p><br>Code. Create. Conquer.</p>
+          </div>
+          <div class="col-12 col-xl-6 d-none d-xl-block">
+            <img src="/images/mybrc.png" alt="image" class="img-fluid">
+          </div>
         </div>
     </section>
-    <!-- HEADER AND CONTENT SECTIONS END -->
+  </div>
+
+  <!-- HEADER AND CONTENT SECTIONS END -->
 
 
 
-    <!-- About Me -->
-    <section class="fdb-block">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
-              <img alt="image" class="img-fluid rounded-0" src="./images/my.jpg">
+  <!-- About Me -->
+  <section id="about-me">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-5 col-md-6">
+          <div class="aboutimage">
+
+            <img alt="image" class="img-fluid rounded-0" src="./images/my.jpg">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 pl-sm-5 mt-5 mt-md-0 about-text">
+          <h2>ABOUT ME!</h2>
+          <hr>
+          <p>Hey there, I'm 
+            your go-to fullstack mobile and web developer! Hailing from the beautiful island of Sri Lanka, 
+            I'm currently an undergraduate at Sabaragamuwa University. I'm all about bringing digital dreams to life through clean code and captivating designs. <br>
+            Let's build something amazing together!</p>
+            <h6><strong class="mr-2">Name : </strong>Harshani Neranjana</h6>
+            <h6><strong class="mr-2">Age : </strong>26 Years</h6>
+            <h6><strong class="mr-2">Location : </strong>Koswatta, Rathmale Rd, Kekandura</h6>
+            <h6><strong class="mr-2">E-mail : </strong>harshanineranjana@gmail.com</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Closed About Me -->
+
+  <!-- Features - What I do -->
+  <section id="what-i-do" class="flex-colo">
+    <h2>WHAT I DO!</h2>
+    <hr>
+    <div class="whatido mt-3">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <!-- 1 -->
+          <div class="col-12 col-sm-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="whatido-box rounded">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>WEB DEVELOPMENT</strong></h3>
+              <p>I studied several front-end frameworks like react-js and backend frameworks like laravel</p>
             </div>
-      
-            <div class="col-12 ml-auto col-md-6 col-lg-5">
-              <h1>Design Blocks</h1>
-              <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <p><a class="btn btn-primary mt-4 mb-5 mb-md-0" href="https://www.froala.com">Download</a></p>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 col-sm-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="whatido-box rounded">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <h3>WEB DESIGN</h3>
+              <p>I studied several front-end frameworks like react-js and backend frameworks like laravel</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 col-sm-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="whatido-box rounded">
+              <i class="fa-solid fa-code"></i>
+              <h3>MOBILE DEVELOP</h3>
+              <p>I studied several front-end frameworks like react-js and backend frameworks like laravel</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 col-sm-6 col-lg-3 mt-lg-0 mt-3">
+            <div class="whatido-box rounded">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <h3>UI/UX DESIGN</h3>
+              <p>I studied several front-end frameworks like react-js and backend frameworks like laravel</p>
             </div>
           </div>
         </div>
-      </section>
-    <!-- Closed About Me -->
+      </div>
+    </div>
+  </section>
+  <!-- CLosed Features - What I do -->
 
-    <!-- Features - What I do -->
-    <section class="fdb-block">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-12">
-              <h1>Features</h1>
-            </div>
-          </div>
-          <div class="row text-center justify-content-center mt-5">
-            <div class="col-12 col-sm-6 col-lg-3">
-              <img alt="image" class="fdb-icon" src="./imgs/icons/monitor.svg">
-              <h3><strong>Feature One</strong></h3>
-              <p>Far far away, behind the word mountains, far from the countries</p>
-            </div>
+  <!-- My Projects -->
+  <section id="works" class="flex-colo">
+    <h2>My Works!</h2>
+    <hr>
+
+    <div class="work-button">
+      <button type="button" data-filter="all">All</button>
+      <button type="button" data-filter=".category-a">Individual</button>
+      <button type="button" data-filter=".category-b">Group</button>
+      <button type="button" data-filter=".category-c">Web</button>
+      <button type="button" data-filter=".category-d">Mobile</button>
       
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-sm-0">
-              <img alt="image" class="fdb-icon" src="./imgs/icons/map-pin.svg">
-              <h3><strong>Feature Two</strong></h3>
-              <p>Separated they live in Bookmarksgrove right at the coast</p>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-              <img alt="image" class="fdb-icon" src="./imgs/icons/life-buoy.svg">
-              <h3><strong>Feature Three</strong></h3>
-              <p>A small river named Duden flows by their place and supplies it</p>
-            </div>
-      
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 pt-lg-0">
-              <img alt="image" class="fdb-icon" src="./imgs/icons/package.svg">
-              <h3><strong>Feature Four</strong></h3>
-              <p>Duden flows by their place far far away, behind the word mountains.</p>
-            </div>
+    </div>
+    <div class="container">
+
+      <div class="row mt-0 mt-md-3 justify-content-center gaps mixitup">
+        <!-- 1 -->
+        <div class="mix category-b category-d col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/mylist.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>List Me</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
           </div>
         </div>
-      </section>
-    <!-- CLosed Features - What I do -->
-
-      <!-- My Projects -->
-      <section class="fdb-block team-6">
-        <div class="container">
-          <div class="row text-center justify-content-center">
-            <div class="col-8">
-              <h1>Team</h1>
-            </div>
-          </div>
-      
-          <div class="row text-center mt-5">
-            <div class="col-4">
-              <img alt="image" class="img-fluid rounded" src="./images/project-ss/mylist.png">
-              <h3><strong>John Smith</strong></h3>
-              <p>Position</p>
-              <p>Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-            </div>
-      
-            <div class="col-4">
-              <img alt="image" class="img-fluid rounded" src="./images/project-ss/chocoWeb.png">
-              <h3><strong>John Smith</strong></h3>
-              <p>Position</p>
-              <p>One morning, when Gregor Samsa woke from troubled dreams.</p>
-            </div>
-      
-            <div class="col-4">
-              <img alt="image" class="img-fluid rounded" src="./images/project-ss/DailyTaskApp.png">
-              <h3><strong>John Smith</strong></h3>
-              <p>Position</p>
-              <p>A small river named Duden flows by their place and supplies it.</p>
-            </div>
+        
+        <!-- 2 -->
+        <div class="mix category-b category-c col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/chocoWeb.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>Chocolate House</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
           </div>
         </div>
-      </section>
-      <!--Closed My Projects -->
-
-      <!-- Contact me -->
-      <section class="fdb-block bg-dark" style="background-image: url(images/blue.svg);">
-        <div class="container">
-          <div class="row text-center justify-content-center">
-            <div class="col-12 col-md-8 col-lg-7">
-              <h1>Contact Us</h1>
-              <h2>We love to hear from you!</h2>
-            </div>
+        
+        <!-- 3 -->
+        <div class="mix category-a category-c col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/DailyTaskApp.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>Daily Task App</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
           </div>
-      
-          <div class="row pt-4">
-            <div class="col-12">
-              <form>
-                <div class="row">
-                  <div class="col-12 col-md">
-                    <input type="text" class="form-control" placeholder="Name">
-                  </div>
-                  <div class="col-12 col-md mt-4 mt-md-0">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="col-12 col-md mt-4 mt-md-0">
-                    <input type="text" class="form-control" placeholder="Phone (optional)">
-                  </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="mix category-a col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/firstCal.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>Java-Javafx calculator</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
+          </div>
+        </div>
+        
+        <!-- 5 -->
+        <div class="mix category-a category-c col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/NoteApp.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>NoteApp-JavaScript</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
+          </div>
+        </div>
+        
+        <!-- 6 -->
+        <div class="mix category-b category-d col-sm-5 col-lg-3 col-11 work-box p-0">
+          <img alt="image" class="img-fluid rounded" src="./images/project-ss/HealthDirect.png">
+          <div class="work-overlay d-flex justify-content-center align-items-center flex-column">
+            <h4>Health-Direct</h4>
+            <button class="rounded mt-4">
+              <a href="#">READ MORE</a>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- pagination -->
+    <ul class="pagination flex-wrap mt-5 d-flex align-items-center">
+      <li class="active">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </section>
+  <!--Closed My Projects -->
+
+  <!-- Contact me -->
+  <section id="contact-me" class="flex-colo">
+    <h2>Contact Me!</h2>
+    <hr>
+    <div class="contact">
+
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-12">
+            <form>
+
+              <div class="row">
+                <div class="col">
+                  <h4>Email</h4>
+                  <input type="email" class="form-control">
                 </div>
-      
-                <div class="row mt-4">
-                  <div class="col">
-                    <input type="email" class="form-control" placeholder="Subject">
-                  </div>
-                </div>
-      
-                <div class="row mt-4">
-                  <div class="col">
-                    <textarea class="form-control" name="message" rows="3" placeholder="How can we help?"></textarea>
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="col text-center">
-                    <button type="submit" class="btn btn-dark">Submit</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Closed Contact me -->
+              </div>
 
-      <!-- Footer -->
-      <footer class="fdb-block footer-small">
-        <div class="container">
-          <div class="row text-center align-items-center">
-            <div class="col-12 col-sm-6 col-md-4 text-sm-left">
-              <img alt="image" src="./images/logo-no-background.png" height="50">
-            </div>
-      
-            <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
-              © 2013-2018 Froala
-            </div>
-      
-            <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
-              <a href="https://www.froala.com" class="mx-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://www.froala.com" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-              <a href="https://www.froala.com" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-              <a href="https://www.froala.com" class="mx-2"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-              <a href="https://www.froala.com" class="mx-2"><i class="fab fa-google" aria-hidden="true"></i></a>
-            </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <h4>Subject</h4>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+  
+              <div class="row mt-4">
+                <div class="col">
+                  <h4>How can help you</h4>
+                  <textarea class="form-control" name="message" rows="5"></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <button type="submit" class="py-3">SUBMIT</button>
+                </div>
+              </div>
+
+            </form>
           </div>
         </div>
-      </footer>
-      <!--Closed Footer -->
+      </div>
+      
+    </div>
+  </section>
+  <!--Closed Contact me -->
+
+  <!-- Footer -->
+  <footer class="rounded footer-small">
+    <div class="container">
+      <div class="row text-center align-items-center">
+        <div class="col-12 col-md-4 text-sm-left text-center">
+          <img alt="image" src="./images/logo-no-background.png" height="50">
+        </div>
+
+        <div class="col-12 col-md-4 text-center my-md-0 my-3">
+          ©2023 Harsh. All Right Reseved
+        </div>
+
+        <div class="col-12 col-md-4 text-md-right">
+          <a href="https://www.linkedin.com/in/harshani-neranjana-8b202520b/" class="mx-2"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://web.facebook.com/harshanineranjana/" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-google" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Closed Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script  src="index.js"></script>
 </body>
 
 </html>
