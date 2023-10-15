@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script><script type="text/javascript">(function() {emailjs.init("J_ZyL6NyDPS-JlD7w");})();</script>
   <title>Portfolio with Flola Blocks</title>
 </head>
 
@@ -254,7 +256,7 @@
   <!--Closed My Projects -->
 
   <!-- Contact me -->
-  <section id="contact-me" class="flex-colo">
+  <form id="contact-me" class="flex-colo">
     <h2>Contact Me!</h2>
     <hr>
     <div class="contact">
@@ -267,27 +269,27 @@
               <div class="row">
                 <div class="col">
                   <h4>Email</h4>
-                  <input type="email" class="form-control">
+                  <input type="email" name="email" id="email" class="form-control">
                 </div>
               </div>
 
               <div class="row mt-4">
                 <div class="col">
                   <h4>Subject</h4>
-                  <input type="text" class="form-control">
+                  <input type="text" name="subject" id="subject" class="form-control">
                 </div>
               </div>
   
               <div class="row mt-4">
                 <div class="col">
                   <h4>How can help you</h4>
-                  <textarea class="form-control" name="message" rows="5"></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="10"></textarea>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col">
-                  <button type="submit" class="py-3">SUBMIT</button>
+                  <button id="sendbutton" onclick='sendMail()' value="Send" type="submit" class="py-3">SUBMIT</button>
                 </div>
               </div>
 
@@ -297,7 +299,7 @@
       </div>
       
     </div>
-  </section>
+  </form>
   <!--Closed Contact me -->
 
   <!-- Footer -->
@@ -327,6 +329,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script  src="index.js"></script>
+
+  <script type="text/javascript">
+    function sendMail() {
+      document.getElementById('contact-me').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_89dfqxh', 'template_qrb8hkr', '#contact-me')
+          .then(function() {
+            console.log('SUCCESS!');
+            let success = document.getElementById("sendbutton");
+            let contactForm = document.getElementById('contact-me');
+            contactForm.reset();
+
+            success.innerHTML = "Successfully Sent";
+            setInterval(()=> window.location.reload(true), 3000);
+          }, function(error) {
+            console.log('FAILED..', error);
+          });
+
+
+      });
+    }
+  </script>
+
 </body>
 
 </html>
