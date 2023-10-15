@@ -103,6 +103,7 @@ p{
 }
 
 /* hero */
+
 .hero{
     background-color: var(--main);
 }
@@ -138,6 +139,8 @@ nav{
 
 .hero-small{
     color: var(--gray);
+    background-image: url(images/mybrc.png);
+    right: 0;
 }
 .hero-small button{
     width: 30%;
