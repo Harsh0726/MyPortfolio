@@ -3,6 +3,7 @@ const readMoreButtons = document.querySelectorAll('.work-box button');
 
 // Get the modal and its components
 const modal = document.getElementById('myModal');
+const modeltitle = document.getElementById('dtitle')
 const modalImage = document.getElementById('modal-image');
 const modalDescription = document.getElementById('modal-description');
 const close = document.querySelector('.close');
@@ -11,9 +12,11 @@ const close = document.querySelector('.close');
 readMoreButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
     // Set the modal content based on the clicked button
+    const title = button.previousElementSibling.textContent;
     const imageSrc = document.querySelectorAll('.work-box img')[index].getAttribute('src');
-    const description = button.previousElementSibling.textContent;
+    const description = button.getAttribute('data-description');
     
+    modeltitle.innerHTML = title;
     modalImage.src = imageSrc;
     modalDescription.innerHTML = description;
 
