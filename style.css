@@ -151,6 +151,11 @@ nav{
         background-image: none; 
     }
 }
+@media (min-width: 768px) {
+    .navbar-togglar {
+        display: none;
+    }
+}
 .hero-small button{
     width: 30%;
     padding: 1rem;
